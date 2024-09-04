@@ -9,7 +9,7 @@ import {
 import { useState, useEffect, useCallback, use } from "react";
 import { useQueue } from "@uidotdev/usehooks";
 import Dg from "./dg.svg";
-import Recording from "./recording.svg";
+import Recording from "@/media/recording.svg";
 import Image from "next/image";
 import axios from "axios";
 import Siriwave from 'react-siriwave';
@@ -246,8 +246,8 @@ export default function Microphone() {
     return (
       <span className="w-full text-center">Loading temporary API key...</span>
     );
-  if (isLoading)
-    return <span className="w-full text-center">Loading the app...</span>;
+  // if (isLoading)
+  //   return <span className="w-full text-center">Loading the app...</span>;
 
   return (
     <div className="w-full relative">
